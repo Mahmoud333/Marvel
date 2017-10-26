@@ -11,11 +11,19 @@ import UIKit
 class MainVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var NoInternetImageV: UIImageView!
+    
     var characterss = [Character]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let rand = Int(arc4random_uniform(2) + 1)
+        print("Rand: " + "\(rand)")
+        NoInternetImageV.image = UIImage(named: "nointernet\(rand)")
+        
+        
         navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
         navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         navigationController?.navigationBar.layer.shadowRadius = 3.0;
@@ -39,6 +47,12 @@ class MainVC: UIViewController {
             self.characterss.append(contentsOf: characters)
             self.tableView.reloadData()
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = false
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

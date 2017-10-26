@@ -9,12 +9,12 @@
 import Foundation
 import Alamofire
 
-class CharacterRelatedStoriesServices {
+class CharRelatedStoriesServices {
     
-    static var instance = CharacterRelatedStoriesServices()
+    static var instance = CharRelatedStoriesServices()
     
     
-    func fetchRelated(id: Int,type: String, completion: @escaping (CharacterDetails) -> ()) {
+    func fetchRelated(id: Int,type: String, completion: @escaping ([RelatedStories]) -> ()) {
         
         let ts = NSDate().timeIntervalSince1970.description
         let hash = "\(ts)\(PRIVATE_KEY)\(PUBLIC_KEY)".encriptToMD5().map { String(format: "%02hhx", $0) }.joined()
@@ -26,16 +26,17 @@ class CharacterRelatedStoriesServices {
         print("hash: \(hash)")
         print("URL: " + url)
         
+        
         Alamofire.request(url).responseJSON { (response) in
             //print(response.value)
             
             //let jsonData = JSON()
             
-            var characterDetail = CharacterDetails()
-            characterDetail.initWithData(data: response.result.value)
+            
+            var relatedStories = RelatedStories().initReturnWithData(data: response.result.value)//initWithData(data: response.result.value)
             
             
-            completion(characterDetail)
+            completion(relatedStories)
         }
     }
     

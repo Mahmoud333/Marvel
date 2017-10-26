@@ -7,29 +7,52 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoVC: UIViewController {
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var imageV: AverageColorImageV!
+    @IBOutlet weak var descLbl: UITextView!
+    
+    var story: RelatedStories?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        containerView.layer.cornerRadius = 5
+        containerView.layer.shadowColor = UIColor.black.cgColor
+        containerView.layer.shadowOffset = CGSize(width: 1.5, height: 3.5)
+        containerView.layer.shadowOpacity = 0.7
+        containerView.layer.shadowRadius = 3.0
+        containerView.clipsToBounds = false
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if story != nil {
+            
+            if story!.thumbNail == "null.null" {
+                self.imageV.image = UIImage(named: "wc-placeholder")
+            } else {
+                let url = URL(string: story!.thumbNail)
+                imageV.kf.setImage(with: url)
+            }
 
-        // Do any additional setup after loading the view.
+        
+            descLbl.text = story!.title
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func closeTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
+    
 
 }

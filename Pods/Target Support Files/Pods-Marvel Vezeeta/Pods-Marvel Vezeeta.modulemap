@@ -1,0 +1,6 @@
+framework module Pods_Marvel_Vezeeta {
+  umbrella header "Pods-Marvel Vezeeta-umbrella.h"
+
+  export *
+  module * { export * }
+}

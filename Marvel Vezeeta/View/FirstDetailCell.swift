@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FirstDetailCell: UITableViewCell {
-
+    @IBOutlet weak var imageV: AverageColorImageV!
+    
+    @IBOutlet weak var descLbl: UILabel!
+    
+    @IBOutlet weak var nameLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+
     }
 
+    func configuerCell(desc: String, name: String){
+
+        descLbl.text = desc
+        nameLbl.text = name
+        
+    }
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

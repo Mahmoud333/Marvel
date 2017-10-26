@@ -31,43 +31,29 @@
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZkP-Et-gVs">
-                        <rect key="frame" x="16" y="45.5" width="288" height="122"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjq-mA-eK4">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Detail">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo7-2F-pgf">
-                                <rect key="frame" x="0.0" y="44" width="288" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Wiki">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qei-WD-rPi">
-                                <rect key="frame" x="0.0" y="88" width="288" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Comiclink">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
-                    </stackView>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZIH-dg-4tV">
+                        <rect key="frame" x="0.0" y="33" width="320" height="148"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="148" id="ESf-Gj-K3S"/>
+                        </constraints>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </tableView>
                 </subviews>
                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="ZkP-Et-gVs" firstAttribute="top" secondItem="C8j-JS-q9a" secondAttribute="bottom" constant="18" id="WTm-aW-TxA"/>
+                    <constraint firstAttribute="trailing" secondItem="ZIH-dg-4tV" secondAttribute="trailing" id="Ucu-hY-qfN"/>
+                    <constraint firstAttribute="bottom" secondItem="ZIH-dg-4tV" secondAttribute="bottom" constant="7.5" id="XF0-rG-wpU"/>
+                    <constraint firstItem="ZIH-dg-4tV" firstAttribute="top" secondItem="C8j-JS-q9a" secondAttribute="bottom" constant="5.5" id="YEY-bp-mmH"/>
                     <constraint firstItem="C8j-JS-q9a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="aRL-UV-JgZ"/>
-                    <constraint firstItem="ZkP-Et-gVs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="kdh-hI-OWQ"/>
+                    <constraint firstItem="ZIH-dg-4tV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cm4-gK-uo9"/>
                     <constraint firstItem="C8j-JS-q9a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="s5a-hU-NNK"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ZkP-Et-gVs" secondAttribute="trailing" constant="8" id="ygt-Jc-yCh"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tableView" destination="ZIH-dg-4tV" id="xWb-Ax-Qgl"/>
+            </connections>
             <point key="canvasLocation" x="32" y="175.5"/>
         </tableViewCell>
     </objects>
