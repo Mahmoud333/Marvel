@@ -2,20 +2,28 @@ PODS:
   - Alamofire (4.5.0)
   - IQKeyboardManagerSwift (5.0.4)
   - Kingfisher (4.2.0)
+  - Realm (3.0.1):
+    - Realm/Headers (= 3.0.1)
+  - Realm/Headers (3.0.1)
+  - RealmSwift (3.0.1):
+    - Realm (= 3.0.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - IQKeyboardManagerSwift
   - Kingfisher (~> 4.2)
+  - RealmSwift
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
   Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  Realm: ba6144c74f835f7497791f6599d63a7755377b83
+  RealmSwift: 7d13b1ac4b6022a13f841e3143e7789c9e40ad0d
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 74c1bd0eadf6fa0de430f050ce18f966b601baed
+PODFILE CHECKSUM: efef621ce00231c7b7469ed24995eb383c3188c0
 
 COCOAPODS: 1.2.1

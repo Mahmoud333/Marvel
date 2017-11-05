@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-
 class CharactersService {
     
     static var instance = CharactersService()
@@ -58,3 +57,4 @@ class CharactersService {
         }
     }    
 }
+

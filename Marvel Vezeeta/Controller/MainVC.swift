@@ -43,8 +43,26 @@ class MainVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        CharactersService.instance.fetchCharacters(limit: 10, offSet: 0) { (characters) in
-            self.characterss.append(contentsOf: characters)
+        if Connectivity.isConnectedToInternet() {
+            CharactersService.instance.fetchCharacters(limit: 10, offSet: 0) { (characters) in
+                self.characterss.append(contentsOf: characters)
+                self.tableView.reloadData()
+             
+                for character in characters {
+                    var personThatExists = RealmService.instace.realm?.object(ofType: RealmCharacter.self , forPrimaryKey: character.id)
+                    
+                     if personThatExists != nil {    //don't add
+                        print("Realm won't save character already exist")
+                     } else {
+                        print("Realm saved character")
+                        RealmService.instace.saveThisCharacter(character: character)
+                     }
+                 }
+            }
+        } else {
+        
+            //= not append because we are already fetching all the characters in realm
+            characterss = RealmService.instace.fetchRealmCharacters()
             self.tableView.reloadData()
         }
     }
@@ -69,9 +87,23 @@ class MainVC: UIViewController {
     }
     
     func fetchAnotherHeros() {
-        CharactersService.instance.fetchCharacters(limit: 10, offSet: characterss.count) { (characters) in
-            self.characterss.append(contentsOf: characters)
+        
+        CharactersService.instance.fetchCharacters(limit: 10, offSet: characterss.count) { (newCharacters) in
+            self.characterss.append(contentsOf: newCharacters)
             self.tableView.reloadData()
+            //RealmService.instace.saveThis(characters: newCharacters)  //saving wrong file
+            
+            
+            for character in newCharacters {
+                var personThatExists = RealmService.instace.realm?.object(ofType: RealmCharacter.self , forPrimaryKey: character.id)
+                
+                if personThatExists != nil {        //don't add
+                    print("Realm won't save character already exist")
+                } else {
+                    print("Realm saved character")
+                    RealmService.instace.saveThisCharacter(character: character)
+                }
+            }
         }
     }
     

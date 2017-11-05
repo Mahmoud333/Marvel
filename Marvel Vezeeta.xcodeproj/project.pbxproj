@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2F991D1FAE7DDC0044C3E5 /* RealmPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F991C1FAE7DDC0044C3E5 /* RealmPhoto.swift */; };
 		1E40CB0F1F9EBB9100ABFF53 /* CharRelatedStoriesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40CB0E1F9EBB9100ABFF53 /* CharRelatedStoriesServices.swift */; };
+		1E4727E31FAE81200064E137 /* RealmCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4727E21FAE81200064E137 /* RealmCharacter.swift */; };
+		1E4727E51FAE827D0064E137 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4727E41FAE827D0064E137 /* RealmService.swift */; };
 		1E56FEE71F9D640E0028E0C3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56FEE61F9D640E0028E0C3 /* SearchVC.swift */; };
 		1E9310E01F9E60A3000D0F72 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9310DF1F9E60A3000D0F72 /* CharacterDetails.swift */; };
 		1E9310E21F9E6220000D0F72 /* DetailCharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9310E11F9E6220000D0F72 /* DetailCharacterService.swift */; };
@@ -36,6 +39,7 @@
 		1EB586241F9C10D000D7E10D /* DetailsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB586221F9C10D000D7E10D /* DetailsCollectionCell.swift */; };
 		1EB586251F9C10D000D7E10D /* DetailsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB586231F9C10D000D7E10D /* DetailsCollectionCell.xib */; };
 		1EF97BE91FA17B570073202D /* AverageColorImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF97BE81FA17B570073202D /* AverageColorImageV.swift */; };
+		1EFBEE1E1FAF99D100053634 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBEE1D1FAF99D100053634 /* Connectivity.swift */; };
 		3B75AEE1333877E8839244C0 /* Pods_Marvel_Vezeeta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5763E086053CD412A67064 /* Pods_Marvel_Vezeeta.framework */; };
 		B0B1B45EB20538AD02C31036 /* Pods_Marvel_VezeetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3211A0E676DC8684A3C3C9 /* Pods_Marvel_VezeetaTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,8 +54,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E2F99191FAE79410044C3E5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E2F991C1FAE7DDC0044C3E5 /* RealmPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPhoto.swift; sourceTree = "<group>"; };
 		1E40CB0E1F9EBB9100ABFF53 /* CharRelatedStoriesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharRelatedStoriesServices.swift; sourceTree = "<group>"; };
+		1E4727E21FAE81200064E137 /* RealmCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCharacter.swift; sourceTree = "<group>"; };
+		1E4727E41FAE827D0064E137 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		1E56FEE61F9D640E0028E0C3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		1E9310DF1F9E60A3000D0F72 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 		1E9310E11F9E6220000D0F72 /* DetailCharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterService.swift; sourceTree = "<group>"; };
@@ -86,6 +106,7 @@
 		1EB586221F9C10D000D7E10D /* DetailsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionCell.swift; sourceTree = "<group>"; };
 		1EB586231F9C10D000D7E10D /* DetailsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCollectionCell.xib; sourceTree = "<group>"; };
 		1EF97BE81FA17B570073202D /* AverageColorImageV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageColorImageV.swift; sourceTree = "<group>"; };
+		1EFBEE1D1FAF99D100053634 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		2C5763E086053CD412A67064 /* Pods_Marvel_Vezeeta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Vezeeta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA5C1F65C69A2CB2BF9FA3D /* Pods-Marvel Vezeeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Vezeeta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel Vezeeta/Pods-Marvel Vezeeta.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3211A0E676DC8684A3C3C9 /* Pods_Marvel_VezeetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_VezeetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,10 +135,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2F991B1FAE797A0044C3E5 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F991C1FAE7DDC0044C3E5 /* RealmPhoto.swift */,
+				1E4727E21FAE81200064E137 /* RealmCharacter.swift */,
+				1E4727E41FAE827D0064E137 /* RealmService.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
 		1E4E4D1C1FA0011E002CD268 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				1E96A59E1F9BCA3A00A0DFFD /* Constants.swift */,
+				1EFBEE1D1FAF99D100053634 /* Connectivity.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -145,6 +177,7 @@
 		1E96A57D1F9BC88B00A0DFFD /* Marvel Vezeeta */ = {
 			isa = PBXGroup;
 			children = (
+				1E2F991B1FAE797A0044C3E5 /* RealmModel */,
 				1E4E4D1C1FA0011E002CD268 /* Utilities */,
 				1EA02C0F1F9FC30F00484782 /* Xibs */,
 				1E96A5A41F9BCCCF00A0DFFD /* Extensions */,
@@ -270,6 +303,7 @@
 				1E96A5791F9BC88B00A0DFFD /* Resources */,
 				2A306CA4755C394BC123B745 /* [CP] Embed Pods Frameworks */,
 				39BDAA714D51558AD46D6342 /* [CP] Copy Pods Resources */,
+				1E2F99191FAE79410044C3E5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -471,6 +505,8 @@
 				1E9310E01F9E60A3000D0F72 /* CharacterDetails.swift in Sources */,
 				1EB5861D1F9C021000D7E10D /* Character.swift in Sources */,
 				1E96A57F1F9BC88B00A0DFFD /* AppDelegate.swift in Sources */,
+				1EFBEE1E1FAF99D100053634 /* Connectivity.swift in Sources */,
+				1E2F991D1FAE7DDC0044C3E5 /* RealmPhoto.swift in Sources */,
 				1EAE61951F9D14BA00FF4B3C /* DetailsRelatedLinksCell.swift in Sources */,
 				1EAE61981F9D16C600FF4B3C /* DetailVC.swift in Sources */,
 				1E56FEE71F9D640E0028E0C3 /* SearchVC.swift in Sources */,
@@ -483,8 +519,10 @@
 				1E96A5AC1F9BCE5400A0DFFD /* MD5.m in Sources */,
 				1E96A59F1F9BCA3A00A0DFFD /* Constants.swift in Sources */,
 				1EA02C151F9FCC6700484782 /* SearchService.swift in Sources */,
+				1E4727E31FAE81200064E137 /* RealmCharacter.swift in Sources */,
 				1EA02C111F9FC71C00484782 /* BasicTableCell.swift in Sources */,
 				1E96A5A61F9BCCDE00A0DFFD /* String+MD5.swift in Sources */,
+				1E4727E51FAE827D0064E137 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,11 +678,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PD448JSVP;
+				DEVELOPMENT_TEAM = EJJQ28RLG9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Marvel\\ Vezeeta",
+					"$(PROJECT_DIR)/Marvel\\ Vezeeta",
+				);
 				INFOPLIST_FILE = "Marvel Vezeeta/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.Marvel-Vezeeta";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.Marvel-Vezeetaa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Marvel Vezeeta/Marvel Vezeeta-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -660,11 +703,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PD448JSVP;
+				DEVELOPMENT_TEAM = EJJQ28RLG9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Marvel\\ Vezeeta",
+					"$(PROJECT_DIR)/Marvel\\ Vezeeta",
+				);
 				INFOPLIST_FILE = "Marvel Vezeeta/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.Marvel-Vezeeta";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mahmoud-SMGL.Marvel-Vezeetaa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Marvel Vezeeta/Marvel Vezeeta-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

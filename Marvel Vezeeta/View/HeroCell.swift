@@ -49,5 +49,7 @@ class HeroCell: UITableViewCell {
                 
             }
         }*/
+        
+        //RealmService.instace.saveThisCharacter(character: character)
     }
 }

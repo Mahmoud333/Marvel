@@ -10,6 +10,7 @@ target 'Marvel Vezeeta' do
   pod 'Kingfisher', '~> 4.2'
   #pod 'SDWebImage'
   pod 'IQKeyboardManagerSwift'
+  pod 'RealmSwift'
 
   # Pods for Marvel Vezeeta
 

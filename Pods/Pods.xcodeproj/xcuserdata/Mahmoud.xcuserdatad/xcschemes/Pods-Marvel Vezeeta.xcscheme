@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "175F9C6EBD5C146EEC85F2C250DA452A"
+               BlueprintIdentifier = "FC55BDF850B0FC9AE4970A488A637E61"
                BuildableName = "Pods_Marvel_Vezeeta.framework"
                BlueprintName = "Pods-Marvel Vezeeta"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "175F9C6EBD5C146EEC85F2C250DA452A"
+            BlueprintIdentifier = "FC55BDF850B0FC9AE4970A488A637E61"
             BuildableName = "Pods_Marvel_Vezeeta.framework"
             BlueprintName = "Pods-Marvel Vezeeta"
             ReferencedContainer = "container:Pods.xcodeproj">
